@@ -19,11 +19,52 @@
 .cover span{
     display: block;
 }
+.cover h3{
+    font-size: 1.6rem;
+    font-weight:  normal;
+}
 
-.projects{
-    border-radius: 20px;
+
+.social{
+    padding-left: 0;
+}
+.social li{
+    display: inline-block;
+
+
+}
+
+
+.social a{
+    padding: 5px;
+    margin-right: 5px;
+    background-color:cadetblue;
+    text-decoration: none;
+    color: white;
+}
+
+.social a:hover{
+    background-color:lightblue;
+    color: black;
+}
+
+.shadow{
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.projectsHeading{
+    border: 2px solid red;
+    border-radius: 10px;
+    
+}
+
+.project{
+    border-radius: 10px;
     border: solid 2px red;
     height: 3rem;
+    width: 30%;
+    height: 50%;
+    display: inline-block;
 }
 
 .skills{
@@ -39,9 +80,12 @@
 .about{
     border: solid red 2px;
     height: 3rem;
+    width: 62rem;
+    margin: 2rem auto;
 }
 
 .footer{
     border: solid red 2px;
     height: 5rem;
+    text-align: center;
 }

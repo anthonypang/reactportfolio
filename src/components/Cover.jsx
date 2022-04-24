@@ -7,7 +7,7 @@ const Cover = () => {
             <div className='cover'>
                 <p>Hello World, I am</p>
                 <h1>Anthony <span>Pang</span></h1>
-                <p><strong>Aspiring Software Developer.</strong> I'm a Computer Science student at the University of North Carolina at Charlotte</p>
+                <h3><strong>Aspiring Software Developer.</strong> I'm a Computer Science student at the University of North Carolina at Charlotte</h3>
                 <Social />
             </div>
 

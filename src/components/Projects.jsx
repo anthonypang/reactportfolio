@@ -1,11 +1,19 @@
 import React from 'react'
+import Project from './Project'
 
 const Projects = () => {
     return (
         <div className='container'>
-            <div className='projects'>
-                Projects
-            </div>
+
+            <h1 className='projectsHeading shadow'>Projects</h1>
+
+            <Project />
+            <Project />
+
+
+
+
+
         </div>
     )
 }
