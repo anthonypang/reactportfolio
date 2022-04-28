@@ -7,7 +7,8 @@ HTML, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(245, 245, 245);
+  background-color: #aec6cf;
+  scroll-behavior: smooth;
   }
 
 code {

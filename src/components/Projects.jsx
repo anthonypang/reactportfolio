@@ -3,9 +3,9 @@ import Project from './Project'
 
 const Projects = () => {
     return (
-        <div className='container'>
+        <div id='projects' className='container' data-aos="fade-up">
 
-            <h1 className='projectsHeading shadow'>Projects</h1>
+            <h1 className='heading shadow'>Projects</h1>
 
             <Project />
             <Project />
