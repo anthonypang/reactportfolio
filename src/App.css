@@ -4,7 +4,9 @@
     background-color: #5f9ea0;
     display: flex;
     justify-content: space-between;
-
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    transition: top 0.3s;
 }
 
 .header li{
@@ -31,7 +33,9 @@
     margin: 6rem auto;
 }
 
-
+.cover{
+    margin-top: 10rem;
+}
 
 .cover h1{
     font-size:6rem;
