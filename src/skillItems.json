@@ -1,0 +1,26 @@
+[
+    {
+        "skill":"HTML",
+        "image":""
+    },
+    {
+        "skill":"CSS",
+        "image":""
+    },
+    {
+        "skill":"JavaScript",
+        "image":""
+    },
+    {
+        "skill":"React",
+        "image":""
+    },
+    {
+        "skill":"Express",
+        "image":""
+    },
+    {
+        "skill":"Node",
+        "image":""
+    }
+]

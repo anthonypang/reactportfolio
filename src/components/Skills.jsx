@@ -1,4 +1,5 @@
 import React from 'react'
+import skillItems from '../skillItems.json'
 
 const Skills = () => {
     return (
@@ -6,11 +7,9 @@ const Skills = () => {
 
             <h1 className='heading shadow'>Skills</h1>
             <div>
-                Prgramming Languages
+
             </div>
-            <div>
-                Tools
-            </div>
+
         </div>
     )
 }

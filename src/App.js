@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Cover from './components/Cover'
 import Projects from './components/Projects'
-
+import Contact from './components/Contact'
 import Skills from './components/Skills'
 import About from './components/About'
 import './App.css'
@@ -19,6 +19,7 @@ const App = () => {
       <Skills />
 
       <About />
+      <Contact />
       <Footer />
     </>
   )

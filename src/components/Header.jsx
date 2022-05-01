@@ -4,7 +4,7 @@ import logo from '../images/AP-logos_transparent.png'
 const Header = () => {
     return (
         <div id='header' className='header shadow'>
-            <img src={logo} alt='logo' />
+            <a className='logo' href='#top'><img src={logo} alt='logo' /></a>
             <ul>
                 <li><a href='#projects'>Projects</a></li>
                 <li><a href='#skills'>Skills</a></li>

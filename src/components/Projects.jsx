@@ -1,19 +1,28 @@
 import React from 'react'
 import Project from './Project'
+import projectItems from '../projectItems.json'
+
+import { IoLogoReact } from 'react-icons/io5';
 
 const Projects = () => {
     return (
-        <div id='projects' className='container' data-aos="fade-up">
-
-            <h1 className='heading shadow'>Projects</h1>
-
-            <Project />
-            <Project />
+        <div id='projects'>
 
 
+            <div className='container' data-aos="fade-up">
+
+                <h1 className='heading shadow'>Projects</h1>
+
+                {projectItems.map((data, key) => {
+                    return <Project key={key} image={data.image} name={data.name} technologies={data.technologies} link={data.link} />
+                })}
 
 
 
+
+
+
+            </div>
         </div>
     )
 }
