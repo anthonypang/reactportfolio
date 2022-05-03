@@ -2,7 +2,7 @@ import React from 'react'
 import Project from './Project'
 import projectItems from '../projectItems.json'
 
-import { IoLogoReact } from 'react-icons/io5';
+
 
 const Projects = () => {
     return (
