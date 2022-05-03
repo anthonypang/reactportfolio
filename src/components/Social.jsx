@@ -15,7 +15,7 @@ const Social = () => {
                 <li ><a className='shadow' href='https://github.com/anthonypang' target="_blank" rel="noreferrer"><FaGithub /><p>Github</p></a></li>
                 <li><a className='shadow' href='https://www.linkedin.com/in/antpang/' target="_blank" rel="noreferrer"><FaLinkedin /><p>LinkedIn</p></a></li>
                 <li><a className='shadow' href='mailto:anthonypang99@gmail.com' target="_blank" rel="noreferrer"><GrMail /><p>Email</p></a></li>
-                <li><a className='shadow' href='https://drive.google.com/file/d/1bwIxNiqTgK29-25e3BiBAgQGbOK9a4ma/view?usp=sharing' target="_blank" rel="noreferrer"><IoDocumentTextSharp /><p>Resume</p></a></li>
+                <li><a className='shadow' href='https://drive.google.com/file/d/1bufHM17ijfo5L5fyDxDfB6ytZlhEkEM8/view?usp=sharing' target="_blank" rel="noreferrer"><IoDocumentTextSharp /><p>Resume</p></a></li>
 
             </ul>
         </div>

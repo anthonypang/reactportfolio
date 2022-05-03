@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    
     height: 3rem;
     background-color: #5f9ea0;
     display: flex;
@@ -40,7 +41,7 @@
 
 .cover{
     
-    margin-top: 10rem;
+    margin: 10rem auto;
     height: 30rem;
 }
 
@@ -153,9 +154,7 @@ padding: 10px;
 .about{
     border-radius: 5px;
     background-color: cadetblue;
-    width: 62rem;
-    margin: 5rem auto;
-    padding: 10px;
+    
 }
 .contact{
    text-align: center;
@@ -199,4 +198,38 @@ padding: 10px;
 
 #contact{
     border: 2px solid transparent;
+}
+
+
+@media (max-width : 414px){
+    .header {
+       
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .cover h1{
+        font-size: 5rem;
+    }
+
+    .container{
+        width: 100%;
+       
+
+    }
+    .about{
+        width: 100%;
+    }
+
+    .project img{
+        width: 100%;
+    }
+    .social a{
+        padding: 2px;
+    }
 }
