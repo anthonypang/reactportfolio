@@ -132,14 +132,23 @@ padding: 10px;
 }
 
 .skills{
-    border: solid red 2px;
-    height: 3rem;
+    background-color: #5f9ea0;
+    border-radius: 5px;
+    
+}
+.skillItem{
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    
 }
 
-.education{
-    border: solid red 2px;
-    height: 3rem;
+.skillItem img{
+    width: 8rem;
+    margin: 15px;
 }
+
+
 
 .about{
     border-radius: 5px;

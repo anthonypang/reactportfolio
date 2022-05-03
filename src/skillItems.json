@@ -1,26 +1,33 @@
 [
-    {
-        "skill":"HTML",
-        "image":""
-    },
-    {
-        "skill":"CSS",
-        "image":""
-    },
+    
     {
         "skill":"JavaScript",
-        "image":""
+        "image":"JavaScript-logo"
+    },
+    {
+        "skill":"TypeScript",
+        "image":"typescript"
     },
     {
         "skill":"React",
-        "image":""
+        "image":"react"
+    },
+    
+    {
+        "skill":"Node.js",
+        "image":"node"
+    },
+    
+    {
+        "skill":"git",
+        "image":"git"
     },
     {
-        "skill":"Express",
-        "image":""
+        "skill":"HTML",
+        "image":"html5"
     },
     {
-        "skill":"Node",
-        "image":""
+        "skill":"CSS",
+        "image":"css3"
     }
 ]
