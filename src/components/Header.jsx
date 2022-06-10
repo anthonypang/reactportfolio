@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/AP-logos_transparent.png'
+
 
 const Header = () => {
     return (
