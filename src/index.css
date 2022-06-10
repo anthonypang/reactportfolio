@@ -5,8 +5,9 @@ HTML, body {
   font-family: poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #aec6cf;
+  background-color: #191d2b;
   scroll-behavior: smooth;
+  color: white;
   }
 
 code {
