@@ -35,8 +35,8 @@
 }
 
 .header a:hover:not(.logo){
-    background-color: lightblue;
-    color: black;
+    background-color: #317873;
+    color: white;
 }
 
 
@@ -93,8 +93,8 @@ color: none;
 }
 
 .social a:hover{
-    background-color:lightblue;
-    color: black;
+    background-color:#317873;
+    color: white;
     
 }
 
@@ -103,22 +103,22 @@ color: none;
 }
 
 .heading{
-    background-color: lightblue;
+    background-color: #317873;
 padding: 10px;
     border-radius: 5px;
-    color: black;
+    color: white;
     
 }
 
 .project{
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: #317873;
     height: 3rem;
     text-align: center;
     height: 50%;
     display: inline-block;
     margin: 5px;
-    color: black;
+    color: white;
     
 }
 
@@ -145,7 +145,7 @@ padding: 10px;
 }
 
 .skills{
-    background-color: lightblue;
+    background-color: #317873;
     border-radius: 5px;
     
 }
@@ -153,7 +153,7 @@ padding: 10px;
     display: inline-block;
     margin: 15px;
     text-align: center;
-    color: black
+    color: white
 }
 
 .skillItem img{
@@ -165,15 +165,16 @@ padding: 10px;
 
 .about{
     border-radius: 5px;
-    background-color: lightblue;
-    color: black;
+    background-color: #317873;
+    color: white;
+    margin: 5%;
 }
 .contact{
    text-align: center;
 }
 .contact a {
     text-decoration: none;
-    color: lightblue;
+    color: #317873;
 }
 
 .contact a:hover{
@@ -193,6 +194,11 @@ padding: 10px;
     margin: auto;
     align-self: center;
     
+}
+
+.about-container{
+    background-color: #317873;
+    border-radius: 5px;
 }
 
 #projects{
@@ -272,6 +278,8 @@ padding: 10px;
 margin: auto ;
         
     }
+
+    
 
     .skillItem img{
         width: 7rem;
