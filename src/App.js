@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './components/Header'
-import Cover from './components/Cover'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Skills from './components/Skills'
-import About from './components/About'
+import Header from './sections/Header/Header'
+import Cover from './sections/Cover/Cover'
+import Projects from './sections/Projects/Projects'
+import Contact from './sections/Contact/Contact'
+import Skills from './sections/Skills/Skills'
+import About from './sections/About/About'
 import './App.css'
-import Footer from './components/Footer'
+import Footer from './sections/Footer/Footer'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import skillItems from '../skillItems.json'
-import Skill from './Skill'
+import skillItems from '../../skillItems.json'
+import Skill from './components/Skill'
 
 const Skills = () => {
     return (

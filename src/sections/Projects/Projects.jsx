@@ -1,6 +1,6 @@
 import React from 'react'
-import Project from './Project'
-import projectItems from '../projectItems.json'
+import Project from './components/Project'
+import projectItems from '../../projectItems.json'
 
 
 
