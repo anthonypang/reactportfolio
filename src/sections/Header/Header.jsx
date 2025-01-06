@@ -1,15 +1,35 @@
 import React from 'react'
 
+const navItems = [
+    {
+        name: 'Home',
+        link: '#top'
+    },
+    {
+        name: 'Projects',
+        link: '#projects'
+    },
+    {
+        name: 'Skills',
+        link: '#skills'
+    },
+    {
+        name: 'About',
+        link: '#about'
+    },
+    {
+        name: 'Contact',
+        link: '#contact'
+    }
+]
 
 const Header = () => {
     return (
         <div id='header' className='header shadow'>
             <ul>
-                <li><a href='#top'>Home</a></li>
-                <li><a href='#projects'>Projects</a></li>
-                <li><a href='#skills'>Skills</a></li>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#contact'>Contact</a></li>
+                {navItems.map((data, key) => {
+                    return <li key={key}><a href={data.link}>{data.name}</a></li>
+                })}
             </ul>
         </div>
     )
