@@ -26,11 +26,13 @@ const navItems = [
 const Header = () => {
     return (
         <div id='header' className='header shadow'>
-            <ul>
-                {navItems.map((data, key) => {
-                    return <li key={key}><a href={data.link}>{data.name}</a></li>
-                })}
-            </ul>
+            <div className='container'>
+                <ul className='navItems'>
+                    {navItems.map((data, key) => {
+                        return <li className='navItem' key={key}><a className='navLink' href={data.link}>{data.name}</a></li>
+                    })}
+                </ul>
+            </div>
         </div>
     )
 }

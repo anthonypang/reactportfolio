@@ -4,13 +4,11 @@ import Social from './components/Social'
 const Cover = () => {
     return (
         <div className='container'>
-            <div className='cover'>
-                <p>Hello World, I am</p>
-                <h1>Anthony <span>Pang</span></h1>
+            <div className='hero'>
+                <p>Hello World, I'm Anthony</p>
+                <h1>Front-end Web Developer</h1>
                 <h3>
-                    <strong>Software Engineer </strong>
-                    with over 2 years of experience building scalable and user-centric web applications using React, TypeScript, and modern web technologies. 
-                    Let’s build something exceptional together!
+                    A passionate developer dedicated to creating stunning, user-centric websites and applications that deliver seamless and impactful digital experiences.
                 </h3>
                 <Social />
             </div>
