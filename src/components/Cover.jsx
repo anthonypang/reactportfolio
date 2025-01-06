@@ -10,7 +10,6 @@ const Cover = () => {
                 <h3><strong>Software Engineer.</strong> A computer science graduate from the University of North Carolina at Charlotte</h3>
                 <Social />
             </div>
-
         </div>
     )
 }
