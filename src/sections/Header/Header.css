@@ -50,6 +50,10 @@
 
 /* md */
 @media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1034px) {
   .themeButton {
     display: block;
     color: white;
@@ -82,10 +86,6 @@
   .hamburger {
     display: none;
   }
-}
-
-/* lg */
-@media (min-width: 1280px) {
 }
 
 /* xl */
