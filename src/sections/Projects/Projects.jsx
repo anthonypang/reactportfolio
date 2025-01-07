@@ -1,11 +1,12 @@
 import React from "react";
 import Project from "./components/Project";
 import projectItems from "../../projectItems.json";
+import "../../styles/Projects.css";
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <div className="container" data-aos="fade-up">
+    <div id="projects" className="container">
+      <div className="projects" data-aos="fade-up">
         <h1 className="heading">Projects</h1>
         {projectItems.map((data, key) => {
           return (

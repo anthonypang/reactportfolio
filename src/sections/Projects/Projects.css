@@ -1,0 +1,42 @@
+.project {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+
+.project > div {
+  flex: 1; /* Make each section take up equal width */
+  padding: 1rem;
+}
+
+.project:nth-child(odd) {
+  flex-direction: row-reverse; /* Reverse the order of each odd item */
+}
+
+.project img {
+  border-radius: 5px;
+}
+
+.heading {
+  text-align: center;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1280px) {
+}
+
+/* xl */
+@media (min-width: 1536px) {
+}
