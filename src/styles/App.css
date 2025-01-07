@@ -2,6 +2,16 @@
   line-height: calc(1em * 0.5rem);
 }
 
+body.light {
+  background-color: #f1f5f9;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #191d2b;
+  color: #ffffff;
+}
+
 img,
 svg {
   display: block;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Header.css";
 
 const navItems = [
@@ -25,6 +25,20 @@ const navItems = [
 ];
 
 const Header = () => {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
+
+  useEffect(() => {
+    // Update class on the <body> element
+    document.body.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
   return (
     <div id="header" className="header shadow">
       <div className="container">
@@ -40,7 +54,7 @@ const Header = () => {
           })}
           <div className="verticalLine" />
           <li className="navItem">
-            <button className="themeButton">
+            <button className="themeButton" onClick={toggleTheme}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
