@@ -1,9 +1,14 @@
 import React from "react";
+import "../../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="container footer">
-      <p>Developed by Anthony Pang</p>
+    <div className="footerContainer">
+      <div className="container">
+        <div className="footer">
+          <p>Developed by Anthony Pang</p>
+        </div>
+      </div>
     </div>
   );
 };

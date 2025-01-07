@@ -1,3 +1,21 @@
+.footerContainer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  width: 100%;
+}
+
+.footer {
+  height: 100%;
+  display: flex;
+}
+
+.footer p {
+  margin: auto;
+  align-self: center;
+  color: white;
+}
+
 /* xs */
 @media (min-width: 475px) {
 }
