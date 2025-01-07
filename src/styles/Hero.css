@@ -1,11 +1,16 @@
 .hero {
-  height: 100vh;
+  margin-top: 5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 20px;
+  }
 }
 
 .socials {
@@ -48,6 +53,10 @@
 
 /* md */
 @media (min-width: 768px) {
+  .hero {
+    margin-top: 0;
+    height: 100vh;
+  }
   .socials {
     flex-direction: row;
   }
