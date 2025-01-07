@@ -1,12 +1,5 @@
 [
     {
-        "image":"sportskings",
-        "name":"Sports Kings",
-        "technologies":["Node.js","Express.js","MongoDB"],
-        "link":"https://sportskings.herokuapp.com/"
-    },
-
-    {
         "image":"githubfinder",
         "name":"Github Finder",
         "technologies":["React.js"],
