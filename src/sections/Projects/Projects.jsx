@@ -5,7 +5,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div id="projects" className="container">
+    <div id="projects" className="projectsContainer container">
       <div className="projects" data-aos="fade-up">
         <h1 className="heading">Projects</h1>
         {projectItems.map((data, key) => {
@@ -14,7 +14,7 @@ const Projects = () => {
               key={key}
               image={data.image}
               name={data.name}
-              technologies={data.technologies}
+              description={data.description}
               link={data.link}
             />
           );

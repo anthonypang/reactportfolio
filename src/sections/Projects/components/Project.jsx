@@ -1,6 +1,10 @@
 import React from "react";
 
 const Project = (props) => {
+  const handleClick = () => {
+    window.open(props.link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="project">
       <div className="projectInfo">
@@ -10,22 +14,13 @@ const Project = (props) => {
             alt={props.image}
           />
         </a>
-        <p>{props.name}</p>
-        <p>
-          {props.technologies.map((data, key) => {
-            return (
-              <button key={key} className="shadow">
-                {data}
-              </button>
-            );
-          })}
-        </p>
       </div>
       <div className="projectDescription">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
-        maxime facere ex voluptate aliquam rerum repudiandae tempora quia
-        deserunt placeat quisquam sit dolorem debitis fugit tempore labore vero
-        voluptatibus ad.
+        <h3>{props.name}</h3>
+        <p>{props.description}</p>
+        <button className="viewButton shadow" onClick={handleClick}>
+          View
+        </button>
       </div>
     </div>
   );
