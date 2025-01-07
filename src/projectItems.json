@@ -1,22 +1,22 @@
 [
-    {
-        "image":"githubfinder",
-        "name":"Github Finder",
-        "technologies":["React.js"],
-        "link":"https://githubfinder-anthonypang.netlify.app/"
-    },
+  {
+    "image": "githubfinder",
+    "name": "Github Finder",
+    "technologies": ["React.js"],
+    "link": "https://githubfinder-anthonypang.netlify.app/"
+  },
 
-    {
-        "image":"keeper",
-        "name":"Keeper",
-        "technologies":["React.js"],
-        "link":"https://keeper-anthonypang.netlify.app/"
-    },
-    
-    {
-        "image":"tasktracker",
-        "name":"Task Tracker",
-        "technologies":["React.js"],
-        "link":"https://clever-speculoos-362101.netlify.app/"
-    }
+  {
+    "image": "keeper",
+    "name": "Keeper",
+    "technologies": ["React.js"],
+    "link": "https://keeper-anthonypang.netlify.app/"
+  },
+
+  {
+    "image": "tasktracker",
+    "name": "Task Tracker",
+    "technologies": ["React.js"],
+    "link": "https://clever-speculoos-362101.netlify.app/"
+  }
 ]
