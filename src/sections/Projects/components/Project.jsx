@@ -11,8 +11,12 @@ const Project = (props) => {
       </a>
       <p>{props.name}</p>
       <p>
-        {props.technologies.map((data) => {
-          return <button className="shadow">{data}</button>;
+        {props.technologies.map((data, key) => {
+          return (
+            <button key={key} className="shadow">
+              {data}
+            </button>
+          );
         })}
       </p>
     </div>
