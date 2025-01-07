@@ -7,7 +7,7 @@
   gap: 1rem;
   align-items: center;
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     margin: 20px;
   }
@@ -56,6 +56,11 @@
   .hero {
     margin-top: 0;
     height: 100vh;
+    h1 {
+      h1 {
+        font-size: 5rem;
+      }
+    }
   }
   .socials {
     flex-direction: row;
