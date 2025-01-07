@@ -1,3 +1,29 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about > div {
+  flex: 1; /* Make each section take up equal width */
+  padding: 1rem;
+}
+
+.technologies {
+  display: flex;
+  gap: 5rem;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    display: flex;
+    color: none;
+  }
+}
+.technologies li::before {
+  content: "👍"; /* Replace with your desired emoji */
+  margin-right: 1rem;
+}
+
 /* xs */
 @media (min-width: 475px) {
 }
@@ -8,6 +34,12 @@
 
 /* md */
 @media (min-width: 768px) {
+  .technologies {
+    gap: 10rem;
+    ul {
+      padding-left: 1rem;
+    }
+  }
 }
 
 /* lg */
