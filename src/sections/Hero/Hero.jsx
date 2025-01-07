@@ -1,6 +1,6 @@
 import React from "react";
 import Social from "./components/Socials";
-import "../../styles/Hero.css";
+import "./Hero.css";
 
 const Hero = () => {
   return (
