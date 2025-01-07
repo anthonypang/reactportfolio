@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div id="projects">
       <div className="container" data-aos="fade-up">
-        <h1 className="heading shadow">Projects</h1>
+        <h1 className="heading">Projects</h1>
         {projectItems.map((data, key) => {
           return (
             <Project
