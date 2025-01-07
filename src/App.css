@@ -1,287 +1,86 @@
-.header{
-    width: 100%;
-    
-    height: 3rem;
-    background-color: rgb(20, 20, 20);
-    display: flex;
-    
-    position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
-    transition: top 0.3s;
+* {
+  line-height: calc(1em * 0.5rem);
 }
 
-.header ul {
-    margin: auto;
+body.light {
+  background-color: #f1f5f9;
+  color: #000000;
 }
 
-.header li{
-    display: inline-block;
-    margin: auto 10px;
-    
+body.dark {
+  background-color: #191d2b;
+  color: #ffffff;
 }
 
-.header img {
-    height:2.5rem;
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-.header a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s ;
-    
-
+button {
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
 }
 
-.header a:hover:not(.logo){
-    background-color: #317873;
-    color: white;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-
-.container{
-    
-   
-    width: 62rem;
-    margin:5rem auto;
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.cover{
-    
-    margin: 17rem auto;
-    height: 40rem;
+/* xs */
+@media (min-width: 385px) {
+  .container {
+    max-width: 375px;
+  }
 }
 
-.cover h1{
-    font-size:6rem;
-    margin: auto;
-}
-.cover span{
-    display: block;
-}
-.cover h3{
-    font-size: 1.6rem;
-    font-weight:  normal;
+/* sm */
+@media (min-width: 435px) {
+  .container {
+    max-width: 425px;
+  }
 }
 
-
-.social{
-    padding-left: 0;
-}
-.social li{
-    display: inline-block;
-color: none;
-
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
-.social p{
-    display: inline;
-    margin: 5px;
+/* lg */
+@media (min-width: 1034px) {
+  .container {
+    max-width: 1024px;
+  }
+  .sectionsContainer {
+    gap: 5rem;
+  }
 }
 
-
-.social a{
-    padding: 10px;
-    margin: 5px;
-    background-color:rgb(20, 20, 20);
-    text-decoration: none;
-   color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ;
-
+/* xl */
+@media (min-width: 1450px) {
+  .container {
+    max-width: 1440px;
+  }
 }
 
-.social a:hover{
-    background-color:#317873;
-    color: white;
-    
-}
-
-.shadow{
-    box-shadow: 0 4px 4px black;
-}
-
-.heading{
-    background-color: #317873;
-padding: 10px;
-    border-radius: 5px;
-    color: white;
-    
-}
-
-.project{
-    border-radius: 5px;
-    background-color: #317873;
-    height: 3rem;
-    text-align: center;
-    height: 50%;
-    display: inline-block;
-    margin: 5px;
-    color: white;
-    
-}
-
-.project button{
-    margin: 5px;
-    background-color: rgb(70, 70, 70);
-    border-radius: 5px;
-    border: none;
-    padding: 4px;
-    color: white;
-}
-
-.project img {
-    width: 30rem;
-    border-radius: 5px;
-}
-
-.project a{
-    transition: opacity 0.3s;
-}
-
-.project a:hover{
-    opacity: 50%;
-}
-
-.skills{
-    background-color: #317873;
-    border-radius: 5px;
-    
-}
-.skillItem{
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-    color: white
-}
-
-.skillItem img{
-    width: 8rem;
-    margin: 15px;
-}
-
-
-
-.about{
-    border-radius: 5px;
-    background-color: #317873;
-    color: white;
-    margin: 5%;
-}
-.contact{
-   text-align: center;
-}
-.contact a {
-    text-decoration: none;
-    color: #317873;
-}
-
-.contact a:hover{
-    text-decoration: underline;
-
-}
-
-.footer{
-    background-color: rgb(20, 20, 20);
-    height: 10rem;
-    display: flex;
-    width: 100%;
-    
-}
-
-.footer p{
-    margin: auto;
-    align-self: center;
-    
-}
-
-.about-container{
-    background-color: #317873;
-    border-radius: 5px;
-}
-
-#projects{
-    border: 2px solid transparent;
-}
-
-
-#skills{
-    border: 2px solid transparent;
-}
-
-#about{
-    border: 2px solid transparent;
-}
-
-#contact{
-    border: 2px solid transparent;
-}
-
-
-@media (max-width : 414px){
-
-   
-    .header {
-       margin: 0;
-        display: block;
-        width: 100%;
-        height: auto;
-        
-    }
-    
-
-    .logo{
-        display: none;
-    }
-
-    .cover h1{
-        font-size: 3rem;
-        
-    }
-    .cover h3{
-        font-size: 1rem;
-    }
-    .cover{
-        width: 95%;
-        margin: 7rem auto;
-    }
-
-
-    .container{
-        width: 95%;
-       
-
-    }
-    .about{
-        width: 95%;
-    }
-
-    .project img{
-        width: 100%;
-    }
-    
-    .social li{
-        display: inline-block;
-       margin: 10% auto;
-       width: 100%;
-       text-align: center;
-       border-radius: 5px;
-    }
-    .social{
-        width: 95%;
-        
-    }
-    .social a{
-        
-        background-color: transparent;
-margin: auto ;
-        
-    }
-
-    
-
-    .skillItem img{
-        width: 7rem;
-    }
+/* 2xl */
+@media (min-width: 2570px) {
+  .container {
+    max-width: 2560px;
+  }
 }

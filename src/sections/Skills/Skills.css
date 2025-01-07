@@ -1,0 +1,25 @@
+.skillItem img {
+  width: 8rem;
+  max-width: 100%;
+  margin: 15px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1280px) {
+}
+
+/* xl */
+@media (min-width: 1536px) {
+}
