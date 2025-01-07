@@ -24,21 +24,7 @@ const navItems = [
   },
 ];
 
-const Header = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
-
-  useEffect(() => {
-    // Update class on the <body> element
-    document.body.className = theme;
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
-
+const Header = (props) => {
   return (
     <div id="header" className="header shadow">
       <div className="container">
@@ -54,7 +40,7 @@ const Header = () => {
           })}
           <div className="verticalLine" />
           <li className="navItem">
-            <button className="themeButton" onClick={toggleTheme}>
+            <button className="themeButton" onClick={props.toggleTheme}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -71,7 +57,7 @@ const Header = () => {
             </button>
           </li>
           <li className="hamburger">
-            <button className="hamburgerButton">
+            <button className="hamburgerButton" onClick={props.toggleMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
