@@ -7,16 +7,12 @@ const navItems = [
     link: "#top",
   },
   {
-    name: "Projects",
-    link: "#projects",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
     name: "About",
     link: "#about",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
   },
   {
     name: "Contact",
