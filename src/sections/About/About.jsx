@@ -38,7 +38,9 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div></div>
+        <div className="aboutImageContainer">
+          <img src={require("../../images/coding.jpg")} alt="computer" />
+        </div>
       </div>
     </div>
   );

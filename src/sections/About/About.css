@@ -1,6 +1,6 @@
 .about {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .about > div {
@@ -22,6 +22,16 @@
 .technologies li::before {
   content: "👍"; /* Replace with your desired emoji */
   margin-right: 1rem;
+}
+
+.aboutImageContainer {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5px;
+  }
 }
 
 /* xs */
@@ -48,4 +58,11 @@
 
 /* xl */
 @media (min-width: 1536px) {
+  .about {
+    flex-direction: row;
+    img {
+      width: 90%;
+      height: 36rem;
+    }
+  }
 }
