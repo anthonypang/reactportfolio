@@ -1,3 +1,15 @@
+.contact {
+  text-align: center;
+}
+.contact a {
+  text-decoration: none;
+  color: #317873;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
 /* xs */
 @media (min-width: 475px) {
 }
