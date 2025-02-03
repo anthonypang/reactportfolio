@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="container">
       <div className="hero">
         <h2>Hello World, I'm Anthony 👋</h2>
-        <h1>Front-end Web Developer</h1>
+        <h1>Software Engineer</h1>
         <h3>
           A passionate developer dedicated to creating stunning, user-centric
           websites and applications that deliver seamless and impactful digital
