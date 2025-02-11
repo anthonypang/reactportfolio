@@ -5,13 +5,7 @@ export const workExperience = [
     duration: "August 2022 - January 2025",
     description:
       "Developed and maintained a full-stack expense tracking app with AI integration for receipt scanning, real-time budget tracking, data visualization, and user authentication.",
-    technologies: [
-      "TypeScript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-      "Supabase",
-    ],
+    technologies: ["TypeScript", "React.js", "Next.js", "RTK Query", "AWS"],
     image: "powerdigitalmarketing",
     location: "San Diego, CA (Remote)",
     responsibilities: [
@@ -26,7 +20,7 @@ export const workExperience = [
 ];
 
 export const featuredProject = {
-  image: "flow",
+  image: ["flow", "flow2", "flow3", "flow4", "flow5", "flow6"],
   name: "Flow",
   technologies: [
     "TypeScript",
@@ -35,7 +29,8 @@ export const featuredProject = {
     "Tailwind CSS",
     "Supabase",
   ],
-  link: "https://flow-ivory-rho.vercel.app/",
+  demo: "https://flow-ivory-rho.vercel.app/",
+  code: "https://github.com/anthonypang/flow",
   description:
     "Constructed a full-stack expense tracking app featuring AI integration for receipt scanning with 95% accuracy, real-time budget tracking across 10+ categories, data visualization, and user authentication.",
 };
@@ -99,5 +94,28 @@ export const skillItems = [
   {
     skill: "CSS",
     image: "css3",
+  },
+];
+
+export const navItems = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 ];

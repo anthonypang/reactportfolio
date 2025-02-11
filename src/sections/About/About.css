@@ -1,6 +1,9 @@
 .about {
   display: flex;
   flex-direction: column;
+  padding: 3rem 1rem;
+  max-width: 90%;
+  margin: 3rem auto;
 }
 
 .about > div {

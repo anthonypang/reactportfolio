@@ -1,0 +1,151 @@
+.experience-section {
+  padding: 3rem 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.experience-section .section-header {
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 95%; /* Match the timeline width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0; /* Remove the previous padding */
+}
+
+.timeline {
+  position: relative;
+  width: 95%; /* Adjusted to match Projects section effective width */
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  padding: 2rem 3rem 2rem 4rem;
+  position: relative;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.1));
+  max-width: 95%; /* Added to constrain item width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -8px;
+  top: 2.5rem;
+  background: var(--primary-color);
+  border: 4px solid var(--bg-primary);
+}
+
+.job-header {
+  margin-bottom: 1rem;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.job-duration {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.location {
+  color: var(--text-secondary);
+}
+
+.responsibilities {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.responsibilities li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.responsibilities li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background-color: var(--bg-secondary);
+  color: var(--primary-color);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    padding: 1.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .timeline-item::before {
+    left: -8px;
+  }
+
+  .job-duration {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Add these CSS variables to your root/body styles */
+:root {
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --border-color: rgba(255, 255, 255, 0.1);
+}

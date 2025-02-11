@@ -7,6 +7,7 @@ import About from "./sections/About/About";
 import Footer from "./sections/Footer/Footer";
 import "./App.css";
 import Menu from "./sections/Menu/Menu";
+import Experience from "./sections/Experience/Experience";
 
 const App = () => {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -39,6 +40,7 @@ const App = () => {
             <Hero />
             <About />
             <Projects />
+            <Experience />
             <Contact />
             <Footer />
           </div>

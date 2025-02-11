@@ -1,24 +1,6 @@
 import React from "react";
 import "./Header.css";
-
-const navItems = [
-  {
-    name: "Home",
-    link: "#top",
-  },
-  {
-    name: "About",
-    link: "#about",
-  },
-  {
-    name: "Projects",
-    link: "#projects",
-  },
-  {
-    name: "Contact",
-    link: "#contact",
-  },
-];
+import { navItems } from "../../data/data";
 
 const Header = (props) => {
   return (
@@ -28,8 +10,8 @@ const Header = (props) => {
           {navItems.map((data, key) => {
             return (
               <li className="navItem" key={key}>
-                <a className="navLink" href={data.link}>
-                  {data.name}
+                <a className="navLink" href={`#${data.id}`}>
+                  {data.title}
                 </a>
               </li>
             );

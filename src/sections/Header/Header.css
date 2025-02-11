@@ -6,6 +6,7 @@
   position: fixed; /* Make it stick/fixed */
   top: 0; /* Stay on top */
   transition: top 0.3s;
+  z-index: 1000; /* Add a high z-index to ensure header stays on top */
 }
 
 .navItems {

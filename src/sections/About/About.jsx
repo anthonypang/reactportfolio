@@ -8,7 +8,7 @@ const About = () => {
         <div>
           <h1>About Me</h1>
           <p>
-            Hi, I’m Anthony Pang, a Front-End Engineer with 2 years of
+            Hi, I’m Anthony Pang, a Software Engineer with over 2 years of
             experience building sleek, user-focused web applications. I thrive
             on creating performant, reusable components and optimizing
             interfaces for both functionality and aesthetics.
