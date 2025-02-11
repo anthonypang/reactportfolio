@@ -5,7 +5,7 @@ export const workExperience = [
     duration: "August 2022 - January 2025",
     description:
       "Developed and maintained a full-stack expense tracking app with AI integration for receipt scanning, real-time budget tracking, data visualization, and user authentication.",
-    technologies: ["TypeScript", "React.js", "Next.js", "RTK Query", "AWS"],
+    technologies: ["TypeScript", "React.js", "RTK Query", "AWS"],
     image: "powerdigitalmarketing",
     location: "San Diego, CA (Remote)",
     responsibilities: [
