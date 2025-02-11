@@ -54,10 +54,6 @@
 
 /* lg */
 @media (min-width: 1280px) {
-}
-
-/* xl */
-@media (min-width: 1536px) {
   .about {
     flex-direction: row;
     img {
@@ -65,4 +61,8 @@
       height: 36rem;
     }
   }
+}
+
+/* xl */
+@media (min-width: 1536px) {
 }
