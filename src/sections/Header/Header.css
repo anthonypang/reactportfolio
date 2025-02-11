@@ -41,6 +41,11 @@
   box-shadow: 0 4px 4px black;
 }
 
+.navLink {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 /* xs */
 @media (min-width: 475px) {
 }

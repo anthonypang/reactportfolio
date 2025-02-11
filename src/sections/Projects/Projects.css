@@ -361,3 +361,22 @@
     max-height: 250px;
   }
 }
+
+.project h3 {
+  /* Project titles */
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.project-description,
+.projectDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.tech-tag {
+  font-size: 0.9rem;
+  font-weight: 500;
+}

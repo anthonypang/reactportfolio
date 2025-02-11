@@ -32,3 +32,15 @@
 /* xl */
 @media (min-width: 1536px) {
 }
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}

@@ -30,6 +30,7 @@
 .aboutImageContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   img {
     width: 25rem;
     height: 20rem;
@@ -68,4 +69,16 @@
 
 /* xl */
 @media (min-width: 1536px) {
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
 }

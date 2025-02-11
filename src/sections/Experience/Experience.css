@@ -60,8 +60,8 @@
 }
 
 .job-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
@@ -96,6 +96,7 @@
   margin-bottom: 0.8rem;
   color: var(--text-secondary);
   line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 .responsibilities li::before {
