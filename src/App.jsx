@@ -24,8 +24,8 @@ const App = () => {
   return (
     <div className="app">
       <Header toggleTheme={toggleTheme} />
+      <Hero />
       <main className="main-content">
-        <Hero />
         <About />
         <Projects />
         <Experience />

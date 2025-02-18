@@ -68,6 +68,7 @@ section {
     var(--accent-primary),
     var(--accent-secondary)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
