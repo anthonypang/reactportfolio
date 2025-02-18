@@ -1,59 +1,75 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { navItems } from "../../data/data";
 
-const Header = (props) => {
+const Header = ({ toggleTheme, toggleMenu }) => {
+  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      // Set scrolled state for background change
+      setScrolled(currentScrollPos > 50);
+
+      // Handle navbar show/hide
+      setVisible(
+        (prevScrollPos > currentScrollPos && currentScrollPos > 0) ||
+          currentScrollPos < 50
+      );
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <div id="header" className="header shadow">
-      <div className="container">
-        <ul className="navItems">
-          {navItems.map((data, key) => {
-            return (
-              <li className="navItem" key={key}>
-                <a className="navLink" href={`#${data.id}`}>
-                  {data.title}
-                </a>
-              </li>
-            );
-          })}
-          <div className="verticalLine" />
-          <li className="navItem">
-            <button className="themeButton" onClick={props.toggleTheme}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                />
-              </svg>
-            </button>
-          </li>
-          <li className="hamburger">
-            <button className="hamburgerButton" onClick={props.toggleMenu}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </button>
-          </li>
-        </ul>
+    <header
+      className={`header ${scrolled ? "scrolled" : ""} ${
+        !visible ? "hidden" : ""
+      }`}
+    >
+      <div className="nav-container">
+        <a href="#" className="logo">
+          AP
+        </a>
+        <nav className="nav-links">
+          {navItems.map((item, index) => (
+            <a key={index} href={`#${item.id}`}>
+              {item.title}
+            </a>
+          ))}
+          <button onClick={toggleTheme} className="theme-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+          <button className="menu-toggle" onClick={toggleMenu}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
