@@ -220,3 +220,25 @@ button[type="submit"] svg {
     margin-top: 2rem;
   }
 }
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-status.success {
+  background: rgba(72, 187, 120, 0.1);
+  color: #48bb78;
+}
+
+.form-status.error {
+  background: rgba(245, 101, 101, 0.1);
+  color: #f56565;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

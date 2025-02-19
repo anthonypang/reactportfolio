@@ -1,7 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xqaewgyj", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <section id="contact" className="section contact-section">
       <div className="container">
@@ -72,18 +110,43 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <input type="text" placeholder="Name" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <input type="email" placeholder="Email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                value={formData.email}
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <textarea placeholder="Message" rows="5" required></textarea>
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
             </div>
-            <button type="submit" className="btn-primary">
-              Send Message
+            <button
+              type="submit"
+              className="btn-primary"
+              disabled={status === "sending"}
+            >
+              {status === "sending" ? "Sending..." : "Send Message"}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -95,6 +158,14 @@ const Contact = () => {
                 />
               </svg>
             </button>
+            {status === "success" && (
+              <p className="form-status success">Message sent successfully!</p>
+            )}
+            {status === "error" && (
+              <p className="form-status error">
+                Failed to send message. Please try again.
+              </p>
+            )}
           </form>
         </div>
       </div>
