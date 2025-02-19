@@ -2,6 +2,14 @@ import React from "react";
 import "./Hero.css";
 
 const Hero = () => {
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -14,12 +22,18 @@ const Hero = () => {
           interaction and scalable architecture.
         </p>
         <div className="hero-cta fade-in">
-          <a href="#projects" className="cta-primary">
+          <button
+            onClick={(e) => handleNavClick(e, "projects")}
+            className="cta-primary"
+          >
             View Projects
-          </a>
-          <a href="#contact" className="cta-secondary">
+          </button>
+          <button
+            onClick={(e) => handleNavClick(e, "contact")}
+            className="cta-secondary"
+          >
             Get in Touch
-          </a>
+          </button>
         </div>
       </div>
       <div className="hero-background">
