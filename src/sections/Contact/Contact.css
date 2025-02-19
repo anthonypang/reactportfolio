@@ -108,7 +108,7 @@
 }
 
 .social-link {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   transition: color 0.3s;
 }
 
@@ -119,6 +119,7 @@
 .social-link svg {
   width: 1.5rem;
   height: 1.5rem;
+  fill: currentColor;
 }
 
 /* Form Styles */
@@ -218,6 +219,7 @@ button[type="submit"] svg {
 
   .social-links {
     margin-top: 2rem;
+    justify-content: center;
   }
 }
 
