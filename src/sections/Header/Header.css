@@ -87,6 +87,19 @@
   margin-left: 2rem;
 }
 
+.resume-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 0;
+}
+
+.resume-link:hover {
+  color: var(--accent-primary);
+}
+
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
@@ -122,5 +135,11 @@
 
   .menu-toggle {
     display: block;
+  }
+
+  .resume-link {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
   }
 }

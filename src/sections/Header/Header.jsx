@@ -47,6 +47,14 @@ const Header = ({ toggleTheme }) => {
               {item.title}
             </button>
           ))}
+          <a
+            href="https://drive.google.com/file/d/1mTQufF8VB2vHctgqH7-idaA-OK8xRaWG/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link resume-link"
+          >
+            Resume
+          </a>
         </nav>
         <div className="header-buttons">
           <button onClick={toggleTheme} className="theme-toggle">
