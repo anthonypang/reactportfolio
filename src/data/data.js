@@ -48,6 +48,20 @@ export const featuredProject = {
 
 export const projectItems = [
   {
+    name: "Klimate - Weather Dashboard",
+    description:
+      "Created a responsive weather app delivering real-time geolocation-based updates, hourly forecasts, favorite city management, and recent search history",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "OpenWeather API",
+    ],
+    image: "klimate.png",
+    link: "https://klimate-inky.vercel.app/",
+  },
+  {
     name: "Github Finder - Database Search",
     description:
       "Engineered a web app that allows users to search and explore GitHub profiles, showcasing key details such as repositories, followers, and activity, with results for 9M+ profiles loading in under 1 second.",
